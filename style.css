@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Outfit', 'YoungSerif';
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(./font/Outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'YoungSerif';
+    src: url(./font/Young_Serif/YoungSerif-Regular.ttf);
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0px;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+}
+
+main {
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.75);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto;
+}
+
+figure {
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: hsl(14, 50%, 23%);
+    margin: 20px 0px;
+    font-family: "YoungSerif";
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: hsl(14, 45%, 36%);
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: hsl(332, 51%, 32%);
+    padding-top: 10px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+span {
+    /* color: hsl(24, 5%, 18%); */
+    /* color: hsl(14, 45%, 36%); */
+    color: hsl(30, 10%, 34%);
+    font-weight: 700;
+}
+
+.dish-name,
+.preparation-time,
+.ingredients,
+.instruction,
+.nutrition {
+    margin: 4% 8%;
+}
+
+.preparation-time {
+    background-color: hsl(332, 44%, 85%);
+    border-radius: 15px;
+    padding: 10px 25px;
+}
+
+ul,
+ol {
+    /* padding-left: 50px;
+    padding-right: 50px; */
+    padding: 0px 25px;
+    margin-top: 10px;
+
+}
+
+ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+li {
+    margin: 15px 0px;
+    color: hsl(30, 10%, 34%);
+    padding-left: 15px;
+}
+
+table {
+    margin: 15px 0px;
+}
+
+td,
+th {
+    padding: 7px 40px;
+    font-size: 1rem;
+}
+
+th {
+    color: hsl(30, 10%, 34%);
+}
+
+td {
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+}
+
+hr {
+    width: 85%;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px 0px 30px;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1.2px solid hsl(14, 14%, 65%);
+    /* width: 85%; */
+    text-align: start
+}
+
+#fat-row {
+    border: none;
+}
+
+@media (min-width: 576px) {
+    main {
+        width: 400px;
+    }
+}
+
+@media (min-width: 786px) {
+    main {
+        width: 500px;
+    }
+
+    th,
+    td {
+        text-align: start;
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    main {
+        width: 700px;
+    }
+
+    figure {
+        border-radius: 10px;
+        align-self: center;
+        margin: 30px 30px 0px;
+    }
+
+    img {
+        max-width: 100%;
+        box-shadow: 1px 1px 5px 1px rgb(0, 0, 0, 0.25);
+    }
+
+    .dish-name,
+    .preparation-time,
+    .ingredients,
+    .instruction,
+    .nutrition {
+        margin: 2% 4%;
+    }
+
+    .dish-name {
+        margin-top: 0px;
+    }
+
+    li {
+        padding-left: 10px;
+    }
+
+
+}
